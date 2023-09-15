@@ -10,12 +10,12 @@ You can run this app directly with python or compile it :
 * For other plateform see the [Kivy Doc](https://kivy.org/doc/stable/gettingstarted/packaging.html)
 
 
-# Running python code
+## Running with python
 
-## 1 - Install the necessary python package
+### 1 - Install the necessary python package
 ```
 pip install -r requirements.txt
 ```
 
-## 2 - Enter your adresses
+### 2 - Enter your adresses
 You can either put your adresses in the option menu of the App or hard coded them in `Datas` in [data.py](/data.py)
