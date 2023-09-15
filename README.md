@@ -18,4 +18,4 @@ pip install -r requirements.txt
 ```
 
 ## 2 - Enter your adresses
-You can either put your adresses in the option menu of the App or hard coded them in [data.py](/data.py)
+You can either put your adresses in the option menu of the App or hard coded them in `Datas` in [data.py](/data.py)
