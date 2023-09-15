@@ -1,4 +1,4 @@
-# Unofficial-StartMining-App
+# Unofficial StartMining App
 This App allowed you tu monitor your reward simply by putting your bitcoin and ethereum address.
 You can run this app directly with python or compile it :
 
