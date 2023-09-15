@@ -1,0 +1,48 @@
+<OptionsScreen>:
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: "assets/bg.png"
+
+    BoxLayout:
+        orientation: 'vertical'
+
+        NavBar:
+
+        GridLayout:
+            cols: 1
+            row_force_default: True
+            row_default_height: 40
+            spacing: '20dp'
+            padding: '10dp'
+
+            MyLabel:
+                text: 'Enter your wallet bitcoin address:'
+
+            MyTextInput:
+                id: btc_wallet
+                text: ''
+                hint_text: 'Wallet Address (bc...)'
+
+            MyLabel:
+                text: 'Enter your wallet ethereum address:'
+
+            MyTextInput:
+                id: eth_wallet
+                text: ''
+                hint_text: 'Wallet Address (0x...)'
+
+        GridLayout:
+            cols: 3
+            row_force_default: True
+            row_default_height: 40
+            padding: '10dp'
+
+            Label:
+
+            MyButton:
+                text: 'Save'
+                on_release: root.submit()
+
+            Label:

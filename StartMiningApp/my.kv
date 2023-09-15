@@ -1,0 +1,36 @@
+<MyLabel@Label>:
+    width: '150dp'
+    font_size: '20sp'
+    halign: 'left'
+    color: "black"
+    max_lines: 2
+    size_hint_y: None
+    height: self.texture_size[1]
+    text_size: self.width, None
+
+<MyTextInput@TextInput>:
+    width: '200dp'
+    font_size: '16sp'
+    padding: '10dp'
+
+<MyButton@Button>:
+    width: '20dp'
+    font_size: '16sp'
+    padding: '10dp'
+    background_color: app.color(51, 138, 163, 0.9)
+
+<NavBar>:
+    orientation: 'horizontal'
+    size_hint_y: None
+    height: '48dp'
+
+    MyButton:
+        text: 'Home'
+        on_release: app.switch_screen('start_mining')
+
+    MyButton:
+        text: 'StartMining'
+
+    MyButton:
+        text: 'Options'
+        on_release: app.switch_screen('options')

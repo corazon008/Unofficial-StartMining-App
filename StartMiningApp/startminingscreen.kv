@@ -1,0 +1,67 @@
+<Bitcoin@Label>:
+    font_size: '20sp'
+    color: "black"
+    max_lines: 2
+    size_hint_y: None
+    height: self.texture_size[1]
+    text_size: self.width, None
+    halign: 'right'
+    color: "#f79413"
+    text: "0"
+
+<StartMiningScreen>:
+    live_rewards: live_rewards
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: "assets/bg.png"
+
+    BoxLayout:
+        orientation: 'vertical'
+        NavBar:
+
+        GridLayout:
+            cols: 2
+            row_force_default: True
+            row_default_height: 40
+            spacing: '20dp'
+            padding: '10dp'
+
+            MyLabel:
+                text: 'Your earnings: '
+            BoxLayout:
+                orientation: 'horizontal'
+                spacing: '-160dp'
+                Bitcoin:
+                    id: live_rewards
+                Bitcoin:
+                    text: 'BTC'
+
+            MyLabel:
+                text: 'Next payout: '
+            MyLabel:
+                id: next_payout
+                text: '01/01/01'
+                halign: 'right'
+                color: "blue"
+
+            MyLabel:
+                text: 'Estimated earnings (24h): '
+            BoxLayout:
+                orientation: 'horizontal'
+                spacing: '-160dp'
+                Bitcoin:
+                    id: earnings
+                Bitcoin:
+                    text: 'BTC'
+
+            MyLabel:
+                text: 'Total payout: '
+            BoxLayout:
+                orientation: 'horizontal'
+                spacing: '-160dp'
+                Bitcoin:
+                    id: totalpayout
+                Bitcoin:
+                    text: 'BTC'
